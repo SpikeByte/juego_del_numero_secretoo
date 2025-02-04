@@ -11,7 +11,7 @@ function reiniciar() {
 }
 
 function gerarNumeroSecreto () {
-      let numeroSecreto = parseInt(Math.random() * 10 + 1);
+      let numeroSecreto = parseInt(Math.random() * limiteMaximo + 1);
       if (lista.includes(numeroSecreto)) {
           return gerarNumeroSecreto();
       } else {
